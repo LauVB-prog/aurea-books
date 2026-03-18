@@ -1,0 +1,311 @@
+/* =======================
+RESET BÁSICO
+======================= */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*Elimina márgenes/paddings por defecto y hace que el tamaño incluya bordes y padding */
+
+body {
+font-family: "Helvetica Neue", Arial, sans-serif;
+/*Tipografía princiapal */
+color: #111;
+/* Color del texto */
+background-color: #f5f3ef;
+/* Fondo general */
+line-height: 1.6;
+/* Espacio entre líneas */
+}
+
+/* =======================
+NAVEGACIÓN
+======================= */
+header {
+background-color: #fff;
+/* Fondo blanco */
+border-bottom: 1px solid #ddd;
+/* Línea inferior sutil */
+}
+
+.navbar {
+max-width: 1100px;
+/* Ancho máximo del contenido */
+margin: auto;
+/* Centra horizontalmente */
+padding: 1.2rem 1rem;
+/* Espacio interior */
+display: flex;
+/* Layout flexible */
+justify-content: space-between;
+/* Separa logo y menú */
+align-items: center;
+/* Alinea verticalmente */
+}
+
+.logo {
+font-size: 1.4rem;
+font-weight: 600;
+letter-spacing: 1px;
+/* Espacio entre líneas */
+}
+
+.menu {
+list-style: none;
+/* Quita los puntos de la lista */
+display: flex;
+/* Menú en horizontal */
+gap: 1.5rem;
+/* Espacio entre elementos */
+}
+
+.menu a {
+text-decoration: none;
+/* Quita subrayado */
+color: #111;
+font-size: 0.95rem;
+padding-bottom: 0.2rem;
+border-bottom: 2px solid transparent;
+/* Línea invisible para hover */
+transition: border-color 0.3s;
+/* Animación suave */
+}
+
+.menu a:hover {
+border-color: #111;
+/* Línea aparece al pasar el ratón */
+}
+
+.menu .active {
+border-color: #111;
+/* Marca la página activa */
+}
+
+/* =======================
+SECCIONES GENERALES
+======================= */
+main {
+max-width: 1100px;
+margin: auto;
+padding: 2rem 1rem;
+/* Centradp y espaciado general */
+}
+
+.section {
+margin-bottom: 4rem;
+/* Separación entre bloques */
+}
+
+.section h2 {
+font-size: 1.6rem;
+margin-bottom: 1rem;
+font-weight: 500;
+}
+
+.section.light {
+background-color: #fff;
+/* Fondo blanco*/
+padding: 3rem 2rem;
+border-radius: 4px;
+/* Bordes redondeados */
+}
+
+.page-header {
+text-align: center;
+margin-bottom: 3rem;
+}
+
+.page-header h1 {
+font-size: 2rem;
+margin-bottom: 0.5rem;
+}
+
+.page-header p {
+color: #666;
+/* Texto secundario */
+}
+
+/* =======================
+HERO
+======================= */
+.hero {
+text-align: center;
+padding: 5rem 1rem;
+/* Espacio grande tipo portada */
+}
+
+.hero h1 {
+font-size: 2.5rem;
+font-weight: 500;
+margin-bottom: 1rem;
+}
+
+.hero p {
+font-size: 1.1rem;
+color: #555;
+}
+
+/* =======================
+BOTONES
+======================= */
+.btn {
+display: inline-block;
+/* Permite padding y tamañp */
+margin-top: 1.5rem;
+padding: 0.7rem 1.8rem;
+background-color: #111;
+color: #fff;
+text-decoration: none;
+border: none;
+font-size: 0.9rem;
+letter-spacing: 0.5px;
+cursor: pointer;
+/* Cambia el cursor a mano */
+transition: background-color 0.3s;
+}
+
+.btn:hover {
+background-color: #333;
+/* Oscurece al hacer hover */
+}
+
+/* =======================
+GALERÍA
+======================= */
+.gallery {
+display: grid;
+/* Usa CSS Grid */
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+/* Columnas automáticas responsivas */
+gap: 2rem;
+}
+
+.card {
+background-color: #fff;
+padding: 1rem;
+text-align: center;
+border-radius: 4px;
+transition: transform 0.3s;
+/* Animación suave */
+}
+
+.card:hover {
+transform: translateY(-4px);
+/* Efecto de elevación */
+}
+
+.card img {
+max-width: 100%;
+/* Imagen responsive */
+margin-bottom: 0.8rem;
+}
+
+.card h3 {
+font-size: 1rem;
+margin-bottom: 0.3rem;
+}
+
+.card p {
+font-size: 0.85rem;
+color: #666;
+}
+
+/* =======================
+FORMULARIO
+======================= */
+.form-section {
+max-width: 500px;
+margin: auto;
+/* Centra el formulario */
+}
+
+.form {
+display: flex;
+flex-direction: column;
+/* Elementos de columna */
+gap: 1rem;
+/*Espacio entre campos */
+}
+
+.form label {
+font-size: 0.85rem;
+}
+
+.form input,
+.form textarea {
+padding: 0.6rem;
+border: 1px solid #ccc;
+border-radius: 2px;
+font-size: 0.9rem;
+}
+
+.form input:focus,
+.form textarea:focus {
+outline: none;
+/* Quita borde azul por defecto */
+border-color: #111;
+/* Resalta campo activo */
+}
+
+.checkbox {
+font-size: 0.8rem;
+}
+
+/* =======================
+CONTACTO
+======================= */
+.contact {
+display: grid;
+grid-template-columns: 1fr 1fr;
+/* Dos columnas */
+gap: 2rem;
+align-items: center;
+}
+
+.contact-info h2 {
+margin-bottom: 1rem;
+}
+
+.map img {
+max-width: 100%;
+border-radius: 4px;
+}
+
+/* =======================
+FOOTER
+======================= */
+footer {
+background-color: #111;
+color: #fff;
+margin-top: 4rem;
+}
+
+.footer-content {
+max-width: 1100px;
+margin: auto;
+padding: 2rem 1rem;
+text-align: center;
+font-size: 0.8rem;
+}
+
+.footer-content a {
+color: #fff;
+text-decoration: none;
+}
+
+.social {
+margin-bottom: 1rem;
+}
+
+.social img {
+width: 20px;
+margin: 0 0.5rem;
+opacity: 0.8;
+transition: opacity 0.3s;
+}
+
+.social img:hover {
+opacity: 1;
+/* Se hace más visible al pasar el ratón */
+}
